@@ -1,0 +1,271 @@
+/* 
+    1. Pocisionamiento
+    2. Modelo de caja (Box model)
+    3. Tipografía
+    4. Visuales (efectos visuales)
+    5. Otros
+*/
+
+:root {
+  --just-black: #000000;
+  --black-grey: #1e1e1d;
+  --grey: #3e3e3e;
+  --spider-red: #b11313;
+  --just-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url("./assets/images/mai-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header .logoImg {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  align-self: center;
+  background-image: url("./assets/images/spiderman-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header .spidermanImg {
+  display: inline-block;
+  position: absolute;
+  width: 185px;
+  height: 170px;
+  left: calc(50% - 92.5px);
+  top: calc(100% - 112px);
+  background-image: url("./assets/images/spiderman.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  background-color: var(--just-withe);
+}
+
+main .main-cast {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: var(--black-grey);
+  margin-bottom: 60px;
+}
+
+.main-cast h2 {
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 3.4rem;
+  line-height: 4rem;
+}
+
+.cast-container {
+  width: 90%;
+  min-width: 288px;
+  margin: 0 auto;
+  margin-top: 44px;
+}
+
+.cast-container .cast-container__item {
+  width: 70%;
+  min-width: 175px;
+  max-width: 200px;
+  height: auto;
+  min-height: 210px;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 10px 10px;
+}
+
+.cast-container__item .cast-item__photo {
+  display: inline-block;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+}
+
+#tom-holland {
+  background-image: url("./assets/images/tom-holland.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#zendaya {
+  background-image: url("./assets/images/zendaya.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#jacob-batalon {
+  background-image: url("./assets/images/jacob-batalon.jpeg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cast-container__item .cast-item__name {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+}
+
+.cast-container__item .cast-item__character {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  color: var(--grey);
+}
+
+main .main-movies {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  min-height: 598px;
+  text-align: center;
+  background-color: var(--black-grey);
+}
+
+.main-movies h2 {
+  display: inline-block;
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 3.4rem;
+  line-height: 4rem;
+  color: var(--just-white);
+}
+
+.main-movies .movies-container__slider {
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.movies-container__item {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 224px;
+  max-width: 235px;
+  height: 319px;
+  margin: 0px 5px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.movies-container__item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#homecoming {
+  background-image: url("./assets/images/homecoming.jpeg");
+}
+
+#far-from-home {
+  background-image: url("./assets/images/far-from-home.png");
+}
+
+#spiderverse {
+  background-image: url("./assets/images/spider-verse.png");
+}
+
+#amazing-1 {
+  background-image: url("./assets/images/amazing-1.jpeg");
+}
+
+#amazing-2 {
+  background-image: url("./assets/images/amazing-2.jpeg");
+}
+
+#spiderman-3 {
+  background-image: url("./assets/images/spiderman-3.jpg");
+}
+
+#spiderman-2 {
+  background-image: url("./assets/images/spider-man-2.webp");
+}
+
+#spiderman-1 {
+  background-image: url("./assets/images/spiderman-1.jpg");
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  background-color: var(--spider-red);
+}
+
+footer section {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+
+.left li {
+  margin: 10px 0px;
+}
+
+.left a {
+  text-decoration: none;
+  color: var(--just-white);
+}
+
+footer .right span {
+  width: 44px;
+  height: 46px;
+  background-image: url("./assets/images/spider.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

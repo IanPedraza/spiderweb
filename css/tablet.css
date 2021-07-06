@@ -1,0 +1,22 @@
+header .logoImg {
+  width: 300px;
+  height: 75px;
+}
+
+header .spidermanImg {
+  width: 220px;
+  height: 200px;
+  left: calc(50% - 110px);
+  top: calc(100% - 130px);
+}
+
+main .main-cast {
+  margin-bottom: 80px;
+}
+
+.cast-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
