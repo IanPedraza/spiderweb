@@ -149,16 +149,15 @@ main .main-cast {
 }
 
 main .main-movies {
+  display: inline-block;
   width: 100%;
   min-width: 320px;
   height: auto;
-  min-height: 598px;
   text-align: center;
   background-color: var(--black-grey);
 }
 
 .main-movies h2 {
-  display: inline-block;
   margin-top: 60px;
   font-weight: bold;
   font-size: 3.4rem;
@@ -174,7 +173,7 @@ main .main-movies {
   width: 100%;
   height: auto;
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 
 .movies-container__item {
