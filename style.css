@@ -38,6 +38,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  /* background-attachment: fixed; */
 }
 
 header .logoImg {
@@ -233,6 +234,7 @@ main .main-movies {
 footer {
   display: flex;
   width: 100%;
+  min-width: 320px;
   height: 150px;
   justify-content: center;
   background-color: var(--spider-red);
