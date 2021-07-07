@@ -142,6 +142,7 @@ main .main-cast {
 }
 
 .cast-container__item .cast-item__character {
+  margin-top: 5px;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.7rem;
@@ -174,6 +175,7 @@ main .main-movies {
   height: auto;
   margin-top: 60px;
   margin-bottom: 125px;
+  padding: 0px 10px;
 }
 
 .movies-container__item {
